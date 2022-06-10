@@ -1,16 +1,11 @@
-### Hi there 👋
-
-<!--
-**sinh-r/sinh-r** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- 👋 Hello everyone!
+- My name is Rishabh Sinha aka @sinh-r
+- Currently working as a Full Stack Developer 
+    - React 
+    - C#
+    - SQL (MS Sequel Server & Postgres)
+    - Working knowledge on Azure (Blob Storage, Event Hub etc)
+- 📫 How to reach me 
+    - My email ID: rsrishabh007@gmail.com
+    - My linkedIn ID: https://www.linkedin.com/in/rishabh-sinha-88a7b758/
+    
