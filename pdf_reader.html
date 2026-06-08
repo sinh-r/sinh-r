@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
+</head>
+<body>
+<pre id="out">Loading...</pre>
+<script>
+pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js';
+
+async function readPDF() {
+  const response = await fetch('uploads/Rishabh_Sinha_Resume_18_May.pdf');
+  const data = await response.arrayBuffer();
+  const pdf = await pdfjsLib.getDocument({ data }).promise;
+  let allText = '';
+  for (let i = 1; i <= pdf.numPages; i++) {
+    const page = await pdf.getPage(i);
+    const content = await page.getTextContent();
+    const pageText = content.items.map(item => item.str).join(' ');
+    allText += `\n--- PAGE ${i} ---\n` + pageText;
+  }
+  document.getElementById('out').textContent = allText;
+  console.log('RESUME_TEXT:', allText);
+}
+readPDF().catch(e => {
+  document.getElementById('out').textContent = 'Error: ' + e.message;
+  console.error(e);
+});
+</script>
+</body>
+</html>
