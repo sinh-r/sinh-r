@@ -187,7 +187,7 @@ const DATA = {
   phone: '+91 9015730338',
   linkedin: 'https://www.linkedin.com/in/rishabh-sinha-88a7b758/',
   github: 'https://github.com/sinh-r',
-  medium: 'https://medium.com',
+  medium: 'https://medium.com/@rsrishabh007',
   stats: [
     { v: '4+', l: 'Years Exp' },
     { v: '70%', l: 'API Faster' },
@@ -196,24 +196,30 @@ const DATA = {
   ],
   skills: {
     'Languages': ['C#', 'Python'],
+    'Backend & APIs': ['ASP.NET', 'Microservices', 'SOLID', 'Clean Architecture', 'Design Patterns', 'Schema Design', 'API Contracts'],
     'Cloud & DevOps': ['Azure App Service', 'Azure AI Services', 'Azure DevOps', 'Azure OpenAI', 'Azure Blobs', 'Azure Event Hubs'],
     'Databases': ['MSSQL', 'PostgreSQL', 'PGAdmin', 'SQL Server'],
-    'Messaging & Infra': ['Confluent Kafka', 'MinIO', 'Alibaba OSS'],
+    'Messaging & Infra': ['Confluent Kafka', 'MinIO', 'Alibaba OSS', 'Beckn Protocol'],
+    'Containers': ['Docker', 'Render'],
+    'Testing': ['TDD', 'xUnit', 'Code Reviews', 'Regression Testing'],
     'Tools & AI': ['GitHub Copilot', 'Cursor', 'Lovable', 'NuGet', 'Git'],
   },
   experience: [
     {
       role: 'Specialist Programmer',
       co: 'Infosys Ltd',
-      loc: 'Gurgaon',
+      loc: 'Noida',
       period: 'Sep 2023 – Present',
       current: true,
       bullets: [
-        'Redesigned API architecture with Azure App Service + Azure OpenAI (RAG) — response time cut by 70% (10s → 3s)',
-        'Led 3M+ record DB sync across 4 regions (SG, EU, CN, CA) — 100% data integrity, zero production incidents',
-        'Built RAG-based AI document querying solution using Azure OpenAI Service & Clean Architecture',
-        'Conducted 50+ code reviews across a 6-member team, significantly reducing post-deployment defects',
-        'Published 3 technical articles on Medium covering HttpClientFactory, Factory Pattern in .NET 8, GitHub Copilot',
+        'Acting as tech lead for a cross-functional team of 6 (1 FE, 1 BE, 2 FS, 2 QA) — coordinating sprint delivery, unblocking engineers, and maintaining quality across all workstreams',
+        'Designing backend architecture for client features — DB schema design, API contracts, and infra change planning using GHCP prompt instruction files and skills, reviewed with the solution architect',
+        'Authoring developer-ready user stories with acceptance criteria for client change requests using GHCP-powered workflows',
+        'Designed and delivered scalable .NET Core Web APIs with SOLID and Clean Architecture — cut API response time 70% (10s → 3s)',
+        'Built a RAG-based AI service using Azure OpenAI and .NET 6 — semantic document search delivered end-to-end within one agile sprint',
+        'Led Kafka and Azure Event Hubs pub-sub integration synchronising 3M+ records across 4 regions with 100% data integrity',
+        'Conducted 50+ code reviews and mentored junior developers, establishing team-wide engineering standards',
+        'Published technical articles on Medium covering .NET engineering topics',
       ],
     },
     {
@@ -253,11 +259,17 @@ const DATA = {
       tech: 'C# · .NET · Azure · Cloud Logging',
       desc: 'Designed and published NuGet packages for Storage, Message Queues, Caching, and Cloud Logging — adopted org-wide across international teams, boosting developer productivity by 70%.',
     },
+    {
+      name: 'Dockerised REST API',
+      tech: '.NET · Docker · Render',
+      desc: 'Containerised .NET REST API deployed to Render, managing the full lifecycle from Dockerfile to live production.',
+    },
   ],
   awards: [
     { icon: '★', name: 'RISE Gracias Award', org: 'Infosys', date: 'Nov 2024', desc: 'Exceptional project delivery & complex API implementation from scratch' },
     { icon: '★', name: 'RISE Insta Award', org: 'Infosys', date: 'Nov 2025', desc: 'Outstanding team leadership and cross-functional execution' },
     { icon: '◆', name: 'Makeathon Team Lead', org: 'Infosys', date: 'Jul 2025', desc: 'Led team to build AI-powered RAG solution — prototype adopted for internal use' },
+    { icon: '◆', name: 'Makeathon Team Lead', org: 'Infosys', date: '2025', desc: 'Led end-to-end delivery of a blue-collar job portal — Aadhaar verification, Beckn Protocol & ONEST compliance' },
   ],
   edu: { deg: 'BTech in Information Technology', inst: 'ABES Engineering College', loc: 'Ghaziabad', year: 'Aug 2021', gpa: '8.12 / 10', note: 'Distinction' },
   certs: [
@@ -304,6 +316,11 @@ function useTyping(phrases, speed = 72, pause = 2400) {
 const IconLinkedIn = () => (
   <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style={{flexShrink:0}}>
     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+  </svg>
+);
+const IconMedium = () => (
+  <svg width="15" height="15" viewBox="0 0 1043.63 592.71" fill="currentColor" style={{flexShrink:0}}>
+    <path d="M588.67 296.36c0 163.67-131.78 296.35-294.33 296.35S0 460 0 296.36 131.78 0 294.34 0s294.33 132.69 294.33 296.36zM911.56 296.36c0 154.06-65.89 279-147.17 279s-147.17-124.94-147.17-279 65.88-279 147.16-279 147.18 124.9 147.18 279zM1043.63 296.36c0 138.19-23.17 250.21-51.76 250.21s-51.75-112-51.75-250.21 23.17-250.21 51.75-250.21 51.76 112.02 51.76 250.21z"/>
   </svg>
 );
 const IconGitHub = () => (
@@ -403,6 +420,7 @@ function Hero() {
           <a href={`mailto:${DATA.email}`} className="btn-p"><IconMail /> Get in Touch</a>
           <a href={DATA.linkedin} target="_blank" rel="noopener" className="btn-s"><IconLinkedIn /> LinkedIn</a>
           <a href={DATA.github} target="_blank" rel="noopener" className="btn-s"><IconGitHub /> GitHub</a>
+          <a href={DATA.medium} target="_blank" rel="noopener" className="btn-s"><IconMedium /> Medium</a>
         </div>
       </div>
     </section>
@@ -565,6 +583,7 @@ function Contact() {
             <a href={`mailto:${DATA.email}`} className="btn-p"><IconMail /> Get in Touch</a>
             <a href={DATA.linkedin} target="_blank" rel="noopener" className="btn-s"><IconLinkedIn /> LinkedIn</a>
             <a href={DATA.github} target="_blank" rel="noopener" className="btn-s"><IconGitHub /> GitHub</a>
+            <a href={DATA.medium} target="_blank" rel="noopener" className="btn-s"><IconMedium /> Medium</a>
           </div>
         </FU>
         <div className="footer-bar">
